@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }:{children:any}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,9 +23,18 @@ const Layout = ({ children }) => {
     }
   `)
 
+  //  <Header siteTitle={data.site.siteMetadata.title} />
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">Minsky One</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <form class="form-inline my-2 my-lg-0" method="get" action="authorised">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> user </button>
+            </form>
+          </div>
+        </nav>
+
       <div
         style={{
           margin: `0 auto`,
