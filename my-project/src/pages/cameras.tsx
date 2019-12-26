@@ -2,18 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import TirCanv from "../components/tircam"
 
 const IndexPage = () => (
   <Layout>
-   <body>
-
-        <main role="main" class="container">
               <div class="row">
                 <div>
                   <img id="colour" width="320"/>
                 </div>
-                <canvas id="thermal" width="320" height="240"></canvas>
+                <TirCanv/>
              </div>
               <div>
                 <canvas id="composite" width="640" height="480" />
@@ -28,8 +25,7 @@ const IndexPage = () => (
                   <input type="range" id="range-scale" onchange="tir_scale=this.value" />
                 </div>
               <a href="authorised/status.jsp">Sensor status</a>
-          </main>    
-  </body>
+
   </Layout>
 )
 
