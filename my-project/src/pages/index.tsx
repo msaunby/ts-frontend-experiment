@@ -5,16 +5,26 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>This starter supports Typescript.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    <Layout>
+        <div class="starter-template">
+            <a href="authorised/status.jsp">Sensor status</a> |
+            <a href="/histogram/">Histogram</a> |
+            <Link to="/cameras/">Cameras</Link>
+
+            <div style={{visibility:'hidden',height:0}}>
+              <img id="colour" width="1" height="1"/>
+              <script>
+              </script>
+              <canvas id="thermal" width="240" height="320"></canvas>
+              <script>
+              </script>
+            </div>
+                  
+            <div height="640">
+              <canvas class="image_cw" id="composite" width="640" height="640"></canvas>
+            </div>  
+        </div>
+    </Layout>
+)      
 
 export default IndexPage

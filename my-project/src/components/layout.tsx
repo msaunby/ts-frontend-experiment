@@ -43,6 +43,7 @@ const Layout = ({ children }:{children:any}) => {
           paddingTop: 0,
         }}
       >
+        <h1>A</h1>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
