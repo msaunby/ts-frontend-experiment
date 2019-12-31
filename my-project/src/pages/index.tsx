@@ -6,7 +6,7 @@ import Image from "../components/image"
 
 const IndexPage = () => (
     <Layout>
-        <div class="starter-template">
+        <div className="starter-template">
             <a href="authorised/status.jsp">Sensor status</a> |
             <a href="/histogram/">Histogram</a> |
             <Link to="/cameras/">Cameras</Link>
@@ -21,7 +21,7 @@ const IndexPage = () => (
             </div>
                   
             <div height="640">
-              <canvas class="image_cw" id="composite" width="640" height="640"></canvas>
+              <canvas className="image_cw" id="composite" width="640" height="640"></canvas>
             </div>  
         </div>
     </Layout>
