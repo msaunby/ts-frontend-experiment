@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import HistSVG from "../components/histsvg"
 
-const IndexPage = () => (
+const HistogramPage = () => (
   <Layout>
     <HistSVG/>
   </Layout>
 )
 
-export default IndexPage
+export default HistogramPage
