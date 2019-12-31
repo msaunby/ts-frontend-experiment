@@ -18,12 +18,11 @@ const IndexPage = () => (
               <canvas id="thermal" width="240" height="320"></canvas>
               <script>
               </script>
-            </div>
-                  
-            <div height="640">
+            </div>            
+            <div>
               <canvas className="image_cw" id="composite" width="640" height="640"></canvas>
-            </div>  
-        </div>
+            </div> 
+          </div>
     </Layout>
 )      
 
